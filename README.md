@@ -9,7 +9,7 @@
 Dreki is a 32-bit RISC-based computer that includes:
 - A 32-bit physical address space capable of addressing up to 4 GiB.
 - An extendable 32-bit RISC instruction set, with support for future expansions up to 128 bits.
-- Support for up to four privilege levels: hardware, firmware, software, and user ground.
+- Support for up to four privilege levels: hardware, firmware, software, and userland.
 - Advanced memory architecture with two parallel RAM banks and configurable memory models.
 - Optional connections for up to two I/O processors for extended processing and data transfer capabilities.
 
@@ -23,7 +23,7 @@ Dreki is a 32-bit RISC-based computer that includes:
   - Hardware
   - Firmware
   - Software
-  - User Ground
+  - Userland
 - **Interrupts**: Supports up to 32 external interrupt sources.
 - **Parallel RAM Banks**: Capable of fetching up to two words at a time from dual RAM banks.
   
