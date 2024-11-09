@@ -81,6 +81,12 @@ Dreki's architecture is designed with extensibility in mind:
 
 ---
 
+## Dreki and Ego
+
+Dreki is not a separate project from **Ego**, it will actually serve as a test when Ego will be ready. Dreki will allow me to understand what challenges I need to address to make Ego flexible and usable both for simulating small logic circuits and for simulating entire computers.
+
+---
+
 ## Summary
 
 Dreki is a fantasy computer system combining educational simplicity with extensible features for future development. Its 32-bit RISC instruction set, robust privilege levels, dual RAM banks, memory coherence management, and I/O processor interfaces make it an ideal foundation for exploring CPU and operating system design.
