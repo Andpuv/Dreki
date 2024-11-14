@@ -1,4 +1,4 @@
-# include "../../inc/core/dreki.h"
+# include "../../inc/core/dreki-log.h"
 # include <assert.h>
 # include <string.h>
 # include <errno.h>
@@ -150,7 +150,7 @@ void dreki_log_vreportf (
     "TRACE"
   };
 
-  /* /discard/ */ fprintf(self->file, self->prompt);
+  /* /discard/ */ fprintf(self->file, "%s", self->prompt);
   /* /discard/ */ fprintf(self->file, "[ %s ] ", levels[ level ]);
   /* /discard/ */ vfprintf(self->file, format, args);
   /* /discard/ */ fprintf(self->file, "\n");

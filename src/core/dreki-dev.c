@@ -1,4 +1,5 @@
-# include "../../inc/core/dreki.h"
+# include "../../inc/core/dreki-dev.h"
+# include "../../inc/core/dreki-log.h"
 # include <assert.h>
 # include <string.h>
 # include <errno.h>

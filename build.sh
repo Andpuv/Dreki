@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CC="gcc"
-CFLAGS="-Wall -g"
+CFLAGS="-Wall -g -D__DREKI_DEBUG__"
 LDFLAGS=""
 
 SOURCES="src/*.c src/cli/*.c src/core/*.c"

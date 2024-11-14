@@ -31,9 +31,5 @@ uint32_t dreki_unique_id ( void );
 
 struct dreki_log_t;
 struct dreki_dev_t;
-struct dreki_bus_t;
-
-#   include "dreki-log.h"
-#   include "dreki-dev.h"
 
 # endif /* __CORE_DREKI_H__ */

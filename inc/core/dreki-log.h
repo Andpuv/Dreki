@@ -1,6 +1,8 @@
 # ifndef __CORE_DREKI_LOG_H__
 #   define __CORE_DREKI_LOG_H__
 
+#   include "dreki.h"
+
 enum {
   DREKI_LOG_LEVEL_MIN = INT32_C(0),
   DREKI_LOG_LEVEL_MAX = INT32_C(5),
@@ -88,7 +90,7 @@ void dreki_log_reportf (
 #   define dreki_log_alert(self, message)                                      \
   dreki_log_reportf((self), DREKI_LOG_LEVEL_ALERT, (message))
 
-#   if defined(NDEBUG) && !defined(DEBUG)
+#   if !defined(__DREKI_CORE_DEBUG__)
 #     define dreki_log_vdebugf(self, format, args) do {} while ( false )
 #     define dreki_log_debugf(self, format, ...)   do {} while ( false )
 #     define dreki_log_debug(self, message)        do {} while ( false )

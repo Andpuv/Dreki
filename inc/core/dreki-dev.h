@@ -1,6 +1,8 @@
 # ifndef __CORE_DREKI_DEV_H__
 #   define __CORE_DREKI_DEV_H__
 
+#   include "dreki.h"
+
 typedef uint32_t ( * dreki_dev_cycle_t ) (
   struct dreki_dev_t * /* self   */,
   uint32_t             /* cycles */
