@@ -43,7 +43,15 @@ struct dreki_dev_t * dreki_dev_construct (
     );
   }
 
-  if ( dreki_dev_initialize(self, log, bus, cycle, drive, signature) )
+  if (
+    dreki_dev_initialize(self,
+      log,
+      bus,
+      cycle,
+      drive,
+      signature
+    )
+  )
     return self;
 
   free(self);
@@ -110,7 +118,7 @@ bool dreki_dev_initialize (
     );
 
     if ( !log )
-      return self;
+      return false;
 
     self->__owns_log__ = true;
   } else {

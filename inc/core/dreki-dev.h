@@ -25,6 +25,9 @@ struct dreki_dev_t {
   uint32_t             unique_id;
 };
 
+#   define dreki_dev()       struct dreki_dev_t super_dev
+#   define dreki_dev_of(obj) ( &(obj)->super_dev )
+
 __DREKI_CORE__
 struct dreki_dev_t * dreki_dev_construct (
   struct dreki_log_t * log,
@@ -54,5 +57,11 @@ __DREKI_CORE__
 void dreki_dev_deinitialize (
   struct dreki_dev_t * self
 );
+
+#   define dreki_dev_log(self) (self)->log
+#   define dreki_dev_cycle(self, cycles)                                       \
+  ( (self)->cycle ? (self)->cycle((self), (cycles)) : 0 )
+#   define dreki_dev_drive(self, func, size, data)                             \
+  ( (self)->drive ? (self)->drive((self), (func), (size), (data)) : 0 )
 
 # endif /* __CORE_DREKI_DEV_H__ */

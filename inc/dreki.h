@@ -6,5 +6,6 @@
 #   include "core/dreki.h"
 #   include "core/dreki-log.h"
 #   include "core/dreki-dev.h"
+#   include "core/dreki-bus.h"
 
 # endif /* __DREKI_H__ */
